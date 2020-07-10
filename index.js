@@ -2,8 +2,8 @@ var sslRedirect = require('heroku-ssl-redirect');
 var express = require('express');
 var app = express();
 // enable ssl redirect
-app.use(express.static('public'))
 app.use(sslRedirect());
+app.use(express.static('public'))
 
 const port = process.env.PORT || 8080
 
