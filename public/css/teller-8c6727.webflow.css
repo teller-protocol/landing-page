@@ -1,0 +1,702 @@
+.w-layout-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1136px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container.container-hero {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container.container-investors {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.container.container-footer {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.body {
+  background-color: #1c1f20;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 64px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.nav-item {
+  margin-right: 40px;
+  color: hsla(0, 0%, 100%, 0.9);
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-item.last-nav-item {
+  margin-right: 0px;
+}
+
+.link-block {
+  text-decoration: none;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 154px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.hero-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 643px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.hero-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 560px;
+  margin-top: 48px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-shadow: 0 8px 10px 0 hsla(0, 0%, 100%, 0.1);
+}
+
+.text-field {
+  min-height: 64px;
+  min-width: 355px;
+  margin-right: -2px;
+  margin-bottom: 0px;
+  padding-left: 46px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: hsla(0, 0%, 100%, 0.5);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: hsla(0, 0%, 100%, 0);
+  background-image: url('../images/img-email.svg');
+  background-position: 6% 50%;
+  background-size: 14px;
+  background-repeat: no-repeat;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.submit-button {
+  min-height: 64px;
+  min-width: 207px;
+  padding: 21px 46px 22px 32px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgba(56, 152, 236, 0);
+  background-image: url('../images/img-arrow-right.svg'), linear-gradient(108deg, #8b7cf1, #6c5bdf);
+  background-position: 85% 50%, 0px 0px;
+  background-size: 14px, auto;
+  background-repeat: no-repeat, repeat;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.submit-button:hover {
+  padding-right: 46px;
+  background-color: rgba(56, 152, 236, 0);
+}
+
+.div-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.image {
+  position: static;
+  left: 29px;
+  margin-right: -16px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.form-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.div-block-2 {
+  margin-top: 158px;
+}
+
+.investors {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1c1f20), to(#041c21));
+  background-image: linear-gradient(180deg, #1c1f20, #041c21);
+}
+
+.div-block-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 142px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+}
+
+.text-block {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: hsla(0, 0%, 100%, 0.5);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.heading-2 {
+  margin-top: 5px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.div-block-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1136px;
+  min-height: 215px;
+  margin-top: 56px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+.grid {
+  justify-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.investor-logo {
+  margin-right: 74px;
+  margin-left: 74px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #041c21;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 280px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  width: 100%;
+}
+
+.footer-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grid-2 {
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.footer-contact {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 104px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer-legal {
+  margin-left: 104px;
+}
+
+.footer-header {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-link-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.footer-link-item.footer-item-last {
+  margin-bottom: 0px;
+}
+
+.footer-icon-link {
+  margin-right: 8px;
+}
+
+.div-block-5 {
+  width: 100%;
+  height: 1px;
+  margin-top: 80px;
+  margin-bottom: 24px;
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.div-block-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.success-message {
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.text-block-2 {
+  color: #fff;
+}
+
+.error-message {
+  position: absolute;
+  bottom: 352px;
+  border-radius: 5px;
+}
+
+.text-block-5 {
+  max-width: 516px;
+  margin-top: 24px;
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  white-space: normal;
+}
+
+.button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 207px;
+  height: 64px;
+  padding: 21px 49px 22px 32px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/img-arrow-right.svg'), linear-gradient(108deg, #8b7cf1, #6c5bdf);
+  background-position: 85% 50%, 0px 0px;
+  background-size: 14px, auto;
+  background-repeat: no-repeat, repeat;
+}
+
+.text-block-6 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link-block-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 207px;
+  height: 64px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-image: linear-gradient(108deg, #8b7cf1, #6c5bdf);
+  text-decoration: none;
+}
+
+.image-2 {
+  margin-left: 8px;
+}
+
+.link {
+  margin-top: 16px;
+  color: hsla(0, 0%, 100%, 0.8);
+  font-weight: 500;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .div-block-4 {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .grid {
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+  .investor-logo {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .footer-content {
+    width: 80vw;
+  }
+  .footer-copyright {
+    width: 80vw;
+  }
+  .footer-contact {
+    margin-left: 64px;
+  }
+  .footer-legal {
+    margin-left: 64px;
+  }
+  .error-message {
+    position: absolute;
+    bottom: 350px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    margin-top: 48px;
+  }
+  .hero-content {
+    margin-top: 88px;
+  }
+  .hero-header {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .heading {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .form {
+    min-width: 80vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .text-field {
+    min-width: 0px;
+    border-radius: 5px;
+  }
+  .submit-button {
+    margin-top: 8px;
+    border-radius: 5px;
+  }
+  .form-block {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .grid {
+    grid-auto-flow: row;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  .investor-logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .footer-left {
+    margin-bottom: 56px;
+  }
+  .error-message {
+    bottom: 366px;
+  }
+  .text-block-5 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .header {
+    margin-top: 40px;
+  }
+  .heading {
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .heading-2 {
+    text-align: center;
+  }
+  .footer-content {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .footer-right {
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  .footer-social {
+    margin-bottom: 32px;
+  }
+  .footer-contact {
+    margin-bottom: 32px;
+    margin-left: 0px;
+  }
+  .footer-legal {
+    margin-left: 0px;
+  }
+  .div-block-6 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .error-message {
+    bottom: 356px;
+    width: 80vw;
+  }
+  .text-block-3 {
+    text-align: center;
+  }
+  .text-block-4 {
+    margin-top: 16px;
+    text-align: left;
+  }
+  .text-block-5 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
